@@ -1,0 +1,25 @@
+name: pneumo
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scikit-learn
+  - scikit-image
+  - matplotlib
+  - seaborn
+  - tqdm
+  - pillow
+  - jupyterlab
+  - ipykernel
+  - pip:
+      - tensorflow==2.12.*
+      - keras==2.12.*
+      - opencv-python
+      - pywavelets
+      - pydicom
+      - bm3d
+      - papermill
