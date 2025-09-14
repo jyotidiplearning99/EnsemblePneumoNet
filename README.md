@@ -206,18 +206,6 @@ Pipeline:
 
 ---
 
-
-## Expected Artifacts
-
-- Models: `models/cnn_model_fold_{k}.keras` (k=1..5)  
-- CV metrics: `results/cv_metrics.csv` (per‑fold + mean±SD)  
-- PA metrics: `results/pa_metrics.csv`, `results/pa_report.txt`  
-- Figures: `figures/pa_confusion_matrix.png`, `figures/roc_cv.png`, `figures/ablation_patchsize.png`, `figures/ablation_resolution.png`
-
-These are the files referenced by the manuscript and Supplementary.
-
----
-
 ## Configuration (Optional S3)
 
 Some utilities use `configparser` for local/S3 paths (see `pipelines/pipelines.py`, `service/createDataLake.py`). Example:
