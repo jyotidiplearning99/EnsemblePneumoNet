@@ -206,17 +206,6 @@ Pipeline:
 
 ---
 
-## Headless Execution with Papermill
-
-The notebook supports parameterized execution. Ensure there is a **Parameters** cell with defaults (edit first cell accordingly). Then run:
-
-```bash
-papermill "Pneumonia Code v4.0 final .ipynb"           "Pneumonia Code v4.0 final - executed.ipynb"           -p DATA_ROOT "/abs/path/to/data"           -p EPOCHS 50           -p N_FOLDS 5           -p BATCH_SIZE 64           -p LR 1e-4
-```
-
-> If you don’t see a “Parameters” cell, copy the path & hyperparameter block from the README into the first cell and tag it `parameters`.
-
----
 
 ## Expected Artifacts
 
@@ -236,7 +225,7 @@ Some utilities use `configparser` for local/S3 paths (see `pipelines/pipelines.p
 ```ini
 # s3.cfg
 [S3]
-s3_bucket = your-bucket-name
+s3_bucket = bucket-name
 s3_image_prefix = cxr/images/
 ```
 
